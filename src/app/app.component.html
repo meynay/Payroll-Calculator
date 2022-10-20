@@ -1,4 +1,4 @@
 <div class="main-division">
-  <app-payroll-form class="info-side"></app-payroll-form>
-  <app-payroll-result class="salary-side"></app-payroll-result>
+  <app-payroll-form class="info-side" (submitButton)="doCalc($event)" ></app-payroll-form>
+  <app-payroll-result class="salary-side" [salary]="this.salary$ | async"></app-payroll-result>
 </div>

@@ -1,10 +1,10 @@
-<form>
+<form #payrollForm="ngForm" (ngSubmit)="submitButton.emit(payrollForm.value)">
     <div class="info-row">
       <div>
         Years Of Experience
       </div>
       <div>
-        <input #input type="number" (change)="change_years($event)" min="0">
+        <input #input ngModel type="number" name="years" min="0" placeholder="0">
       </div>
     </div>
     <div class="info-row">
@@ -12,7 +12,7 @@
         Profession
       </div>
       <div>
-        <select (change)="change_job($event)">
+        <select ngModel name="job">
           <option value="Dev">Developer</option>
           <option value="Tch">Teacher</option>
           <option value="Csh">Cashier</option>
@@ -24,7 +24,7 @@
         City
       </div>
       <div>
-        <select (change)="change_city($event)">
+        <select ngModel name="city">
           <option value="Teh">Tehran</option>
           <option value="Shz">Shiraz</option>
         </select>
@@ -35,13 +35,13 @@
         Year
       </div>
       <div>
-        <select (change)="change_year($event)">
+        <select ngModel name="year">
           <option value="1400">1400</option>
           <option value="1401">1401</option>
         </select>
       </div>
     </div>
     <div>
-      <button (click)="doThat()">CALCULATE</button>
+      <button>CALCULATE</button>
     </div>
   </form>
