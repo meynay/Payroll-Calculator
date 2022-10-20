@@ -1,6 +1,6 @@
 export interface Person {
     years: number;
-    profession: string;
+    job: string;
     city: string;
-    year: number;
+    year: string;
 }

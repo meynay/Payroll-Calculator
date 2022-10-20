@@ -1,0 +1,47 @@
+<form>
+    <div class="info-row">
+      <div>
+        Years Of Experience
+      </div>
+      <div>
+        <input #input type="number" (change)="change_years($event)" min="0">
+      </div>
+    </div>
+    <div class="info-row">
+      <div>
+        Profession
+      </div>
+      <div>
+        <select (change)="change_job($event)">
+          <option value="Dev">Developer</option>
+          <option value="Tch">Teacher</option>
+          <option value="Csh">Cashier</option>
+        </select>
+      </div>
+    </div>
+    <div class="info-row">
+      <div>
+        City
+      </div>
+      <div>
+        <select (change)="change_city($event)">
+          <option value="Teh">Tehran</option>
+          <option value="Shz">Shiraz</option>
+        </select>
+      </div>
+    </div>
+    <div class="info-row">
+      <div>
+        Year
+      </div>
+      <div>
+        <select (change)="change_year($event)">
+          <option value="1400">1400</option>
+          <option value="1401">1401</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <button (click)="doThat()">CALCULATE</button>
+    </div>
+  </form>

@@ -1,0 +1,47 @@
+  option {
+    background-color: #ffe600;
+  }
+  
+  .info-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top:30px;
+    align-items: center;
+  }
+  
+  select {
+    width:476px;
+    height:40px;
+    text-align: center;
+    border:gray 1px solid;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  button:hover {
+    opacity: 0.7;
+  }
+
+  input {
+    height: 40px;
+    width: 470px;
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+    border:gray 1px solid;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button:active {
+    opacity: 0.5;
+  }
+  
+  button {
+    border-radius: 5px;
+    border: none;
+    background-color: #f4ff00;
+    padding: 10px 200px;
+    margin: 30px 0;
+    cursor: pointer;
+    transition: opacity, 0.2s;
+  }

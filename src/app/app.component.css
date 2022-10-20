@@ -1,4 +1,4 @@
-.main-division {
+  .main-division {
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -7,7 +7,14 @@
     border-radius: 10px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
   }
-  
+
+  .salary-side {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin: 10px 20px;
+  }
+
   .info-side {
     margin: 10px;
     display: flex;
@@ -17,84 +24,3 @@
     flex:1;
   }
   
-  .salary-side {
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-    margin: 10px 20px;
-  }
-  
-  .more-income {
-    color: #70fd43;
-  }
-  
-  .less-income {
-    color: #ff1414;
-  }
-  
-  option {
-    background-color: #ffe600;
-  }
-  
-  .info-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top:30px;
-    align-items: center;
-  }
-  
-  select {
-    width:476px;
-    height:40px;
-    text-align: center;
-    border:gray 1px solid;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  button {
-    border-radius: 5px;
-    border: none;
-    background-color: #f4ff00;
-    padding: 10px 200px;
-    margin: 30px 0;
-    cursor: pointer;
-    transition: opacity, 0.2s;
-  }
-  
-  button:hover {
-    opacity: 0.7;
-  }
-
-  input {
-    height: 40px;
-    width: 470px;
-    text-align: center;
-    background-color: rgb(233, 233, 233);
-    border:gray 1px solid;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  button:active {
-    opacity: 0.5;
-  }
-  .salary-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(214, 214, 214);
-    align-items: center;
-    margin:2px;
-    padding: 5px;
-  }
-  .sub {
-    font-weight: 500;
-  }
-  .income {
-    color:#3eb815;
-  }
-  .tax {
-    color: #ff1414;
-  }

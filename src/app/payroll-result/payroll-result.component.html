@@ -1,0 +1,30 @@
+<div>
+    <div class="salary-row">
+      <div class="sub">Basic Salary</div>
+      <div class="income">{{this.salary['base']}} Rials</div>
+    </div>
+    <div class="salary-row">
+      <div class="sub">Bonus Salary</div>
+      <div class="income">{{this.salary['bonus']}} Rials</div>
+    </div>
+    <div class="salary-row">
+      <div class="sub">Gross Salary</div>
+      <div class="income">{{ this.salary['gross'] }} Rials</div>
+    </div>
+    <div class="salary-row">
+      <div class="sub">Basic Tax</div>
+      <div class="tax">{{ this.salary['tax'] }} Rials</div>
+    </div>
+    <div class="salary-row">
+      <div class="sub">High Income Tax</div>
+      <div class="tax">{{ this.salary['highTax'] }} Rials</div>
+    </div>
+    <div class="salary-row">
+      <div class="sub">Total Tax</div>
+      <div class="tax">{{ this.salary['totalTax']}} Rials</div>
+    </div>
+    <div class="salary-row">
+      <div class="sub">Net Salary</div>
+      <div class="net">{{ this.salary['net'] }} Rials</div>
+    </div>
+  </div>

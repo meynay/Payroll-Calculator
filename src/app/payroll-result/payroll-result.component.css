@@ -1,0 +1,21 @@
+  .salary-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(214, 214, 214);
+    align-items: center;
+    margin:2px;
+    padding: 5px;
+  }
+
+  .sub {
+    font-weight: 500;
+  }
+
+  .income {
+    color:#3eb815;
+  }
+
+  .tax {
+    color: #ff1414;
+  }
