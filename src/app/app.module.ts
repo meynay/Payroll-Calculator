@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { PayrollFormComponent } from './payroll-form/payroll-form.component';
 import { PayrollResultComponent } from './payroll-result/payroll-result.component';
-import { PayrollHandlerService } from './payroll-handler.service';
 import { StoreModule } from '@ngrx/store';
 import { PayrollReducer } from './store/payroll.reducer';
 import { FeatureKey } from './store/payroll.selector';
@@ -22,7 +21,7 @@ import { FeatureKey } from './store/payroll.selector';
     FormsModule,
     StoreModule.forRoot({ [FeatureKey]: PayrollReducer })
   ],
-  providers: [PayrollHandlerService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
